@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'splash_screen.dart';
+
 void main() {
   runApp(const NotepadApp());
 }
@@ -66,7 +68,7 @@ class NotepadApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const NotesHomePage(),
+      home: const SplashScreen(nextScreen: NotesHomePage()),
     );
   }
 }
